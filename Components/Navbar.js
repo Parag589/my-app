@@ -15,7 +15,6 @@ function navbar() {
     <>
     
       {['lg'].map((expand) => (
-        <Navbar key={expand} expand={expand} className=" mb-3">
         <Navbar key={expand} expand={expand} style={{ backgroundColor: "#f8d4bd" }} className="bg-body-tertiary mb-3">
           <Container fluid>
             <Navbar.Brand href="#">
@@ -61,9 +60,22 @@ function navbar() {
                   <Nav.Link><Link className='custom-hover-color text-decoration-none nav-font' href= "/Signup">SignUp</Link></Nav.Link>
                   <Nav.Link><Link className='custom-hover-color text-decoration-none nav-font' href= "/Myaccount">My Account</Link></Nav.Link>
 
-                
+                  {/* <NavDropdown
+                    title="Dropdown"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">
+                      Another action
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">
+                      Something else here
+                    </NavDropdown.Item>
+                  </NavDropdown> */}
                 </Nav>
                 <button className='cart'><FaBagShopping className='bag-icon'/></button>
+                {/* <Button variant="  outline-success">Search</Button> */}
 
               </Offcanvas.Body>
             </Navbar.Offcanvas>
